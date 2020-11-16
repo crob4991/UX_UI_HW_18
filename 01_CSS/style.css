@@ -94,6 +94,12 @@ p {
     justify-content: center;
 }
 
+.nav_but:hover {
+    background: #F2F5F9;
+    box-shadow: inset 14px 14px 16px #e1e4e8, 
+                inset -14px -14px 16px #ffffff;
+}
+
 #nav_logo {
     border: none;
     background-color: rgb(242, 245, 249, 0);
@@ -142,6 +148,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#more_about_me:hover {
+    background: #F2F5F9;
+    box-shadow: inset 14px 14px 16px #e1e4e8, 
+                inset -14px -14px 16px #ffffff;
 }
 
 
@@ -228,6 +240,12 @@ p {
     margin: 0 auto;
 }
 
+.cs_button:hover {
+    background: #B3E0E3;
+    box-shadow: inset 14px 14px 7px #a3cccf, 
+                inset -14px -14px 7px #c3f4f7;
+}
+
 
 /*FOOTER*/
 
@@ -271,10 +289,15 @@ p {
                  -10px -10px 20px #ffd1ce;*/
 }
 
+.foot_icon:hover {
+    background: #F2F5F9;
+    box-shadow: inset 14px 14px 16px #e1e4e8, 
+                inset -14px -14px 16px #ffffff;
+}
+
 .foot_icon img{
     height: 30px;
 }
-
 
 
 #copyright {
@@ -303,6 +326,11 @@ p {
     min-width: 150px;
 }
 
+#back_to_top:hover {
+    background: #F2F5F9;
+    box-shadow: inset 14px 14px 16px #e1e4e8, 
+                inset -14px -14px 16px #ffffff;
+}
 
 
 
