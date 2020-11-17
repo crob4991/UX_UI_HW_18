@@ -103,6 +103,9 @@ p {
 #nav_logo {
     border: none;
     background-color: rgb(242, 245, 249, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -334,39 +337,24 @@ p {
 
 
 
-/*RESPONSIVE ELEMENTS*/
+/*RESPONSIVE SIZING ELEMENTS*/
 
-/*Responsive h1*/
+
+/*Typefaces*/
 
 @media only screen and (max-width: 1195px) {
     h1 {
         font-size: 45pt;
     } 
-}
-
-@media only screen and (max-width: 1095px) {
-    h1 {
-        font-size: 38pt;
-    } 
-}
-
-
-/*Responsive h3*/
-
-@media only screen and (max-width: 1195px) {
+    
     h3 {
         font-size: 22pt;
     } 
-}
 
-@media only screen and (max-width: 1095px) {
-    h3 {
-        font-size: 19pt;
+    p {
+        font-size: 14pt;
     } 
 }
-
-
-/*Responsive h5*/
 
 @media only screen and (max-width: 1135px) {
     h5 {
@@ -374,17 +362,46 @@ p {
     } 
 }
 
-
-/*Responsive p*/
-
-@media only screen and (max-width: 1195px) {
-    p {
-        font-size: 14pt;
-    } 
-}
-
 @media only screen and (max-width: 1095px) {
+    h1 {
+        font-size: 38pt;
+    } 
+    
+    h3 {
+        font-size: 19pt;
+    } 
+
     p {
         font-size: 13pt;
     } 
 }
+
+
+
+
+
+/*Nav*/
+
+    /*Buttons*/
+    @media only screen and (max-width: 1095px) {
+        h4 {
+            font-size: 12pt;
+        }
+        
+        .nav_but {
+            height: 45px;
+            min-width: 100px;
+        }
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+        #nav {
+            justify-content: left;
+        } 
+
+        .nav_but{
+            display: none;
+        }
+
+    }
