@@ -3,9 +3,6 @@ body {
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* typography */ 
 
@@ -13,7 +10,7 @@ h1 {
     font-family: ff-market-web, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50pt;
+    font-size: 40pt;
     margin: 0;
     margin-bottom: -10px;
     color: #5CC5C9;
@@ -25,7 +22,7 @@ h2 {
     font-style: normal;
     font-size: 40pt;
     margin: 0;
-    color: #105383;
+    color: #5CC5C9;
 }
 
 h3 {
@@ -111,145 +108,65 @@ p {
     justify-content: center;
 }
 
-
 /* about me */
 
 #hp_about_me {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 100%;
     grid-template-areas: "profile_pic title_1" "profile_pic title_1";
     padding-left: 40pt;
     padding-right: 40pt;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 #profile_pic {
     grid-area: profile_pic;
-    margin-top: -35px;
-    margin-left: -10px;
-    margin-bottom: -40px;
+    margin-top: 15px;
+    margin-left: -40px;
 }
 
 #title_1 {
     grid-area: title_1;
     align-self: center;
     justify-content: left;
+    margin-top: 15px;
     padding: 30px;
     padding-left: 40px;
 }
 
-#more_about_me {
-    border: none;
-    background-color: rgb(242, 245, 249, 0);
-    color: #105383;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 50px;
-    background: #F2F5F9;
-    box-shadow:  7px 7px 10px #e3e6ea, 
-                -7px -7px 10px #ffffff;
-    height: 50px;
-    min-width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#more_about_me:hover {
-    background: #F2F5F9;
-    box-shadow: inset 14px 14px 16px #e1e4e8, 
-                inset -14px -14px 16px #ffffff;
-}
-
-
 /*UX|UI Case Studies*/
 
 #hp_uxui {
-    /*grid-template-rows: 20% 80%;
-    grid-template-areas: "sec_title uxui_cs_cards";*/
     padding: 25pt;
-    padding-left: 40pt;
-    padding-right: 40pt;
-    background: #B3E0E3;
+    background: #105383;
     box-shadow:  7px 7px 10px #e3e6ea, 
                 -7px -7px 10px #ffffff;
-    background-image: url(../02_Images/glitter_bars.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-y: 55%;
-    background-position-x: right;
 }
 
-/*.back_img {
-    position: relative;
-    margin-left: -200px;
-}*/
-
 .sec_title {
-    /*grid-area: sec_title;*/
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
 }
 
 .uxui_cs_cards {
-    /*grid-area: uxui_cs_cards;*/
     display: flex;
-    align-items: column;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 15px;
 }
 
-.id_card {
+.cs_img {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    /* border-radius: 41px;
-    background: #F2F5F9;
-    box-shadow:  7px 7px 14px #e1e4e8, 
-                -7px -7px 14px #ffffff;*/
-
+    align-content: center;
 }
 
 .cs_img img {
-    border-radius: 40px;
-    margin-bottom: 25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
-.cs_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-
-    /*background: #F2F5F9;
-    box-shadow:  7px 7px 10px #e3e6ea, 
-                -7px -7px 10px #ffffff;*/
-
-    /*background: #F8B7B5;
-    box-shadow:  10px 10px 20px #d59d9c, 
-                 -10px -10px 20px #ffd1ce;*/
-                 
-    background: #B3E0E3;
-    box-shadow:  10px 10px 20px #9ac1c3, 
-                -10px -10px 20px #ccffff;
-
-    border: none;
-    height: 50px;
-    min-width: 150px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 20px;
-    margin: 0 auto;
-}
-
-.cs_button:hover {
-    background: #B3E0E3;
-    box-shadow: inset 14px 14px 7px #a3cccf, 
-                inset -14px -14px 7px #c3f4f7;
-}
 
 
 /*FOOTER*/
@@ -304,7 +221,6 @@ p {
     height: 30px;
 }
 
-
 #copyright {
     grid-area: copyright;
     display: grid;
@@ -336,74 +252,3 @@ p {
     box-shadow: inset 14px 14px 16px #e1e4e8, 
                 inset -14px -14px 16px #ffffff;
 }
-
-
-
-/*RESPONSIVE SIZING ELEMENTS*/
-
-
-/*Typefaces*/
-
-@media only screen and (max-width: 1195px) {
-    h1 {
-        font-size: 45pt;
-    } 
-    
-    h3 {
-        font-size: 22pt;
-    } 
-
-    p {
-        font-size: 14pt;
-    } 
-}
-
-@media only screen and (max-width: 1135px) {
-    h5 {
-        font-size: 13pt;
-    } 
-}
-
-@media only screen and (max-width: 1095px) {
-    h1 {
-        font-size: 38pt;
-    } 
-    
-    h3 {
-        font-size: 19pt;
-    } 
-
-    p {
-        font-size: 13pt;
-    } 
-}
-
-
-
-
-
-/*Nav*/
-
-    /*Buttons*/
-    @media only screen and (max-width: 1095px) {
-        h4 {
-            font-size: 12pt;
-        }
-        
-        .nav_but {
-            height: 45px;
-            min-width: 100px;
-        }
-    }
-    
-    
-    @media only screen and (max-width: 600px) {
-        #nav {
-            justify-content: left;
-        } 
-
-        .nav_but{
-            display: none;
-        }
-
-    }
